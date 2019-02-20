@@ -40,23 +40,7 @@
 				<div class="agile-tables">
 					<div class="w3l-table-info agile_info_shadow">
 						<h3 class="w3_inner_tittle two">Upload Dealer Info CSV file </h3>
-						<p style="color: red;">
-							• Please Follow this Instructions </br>
-							• Imported File must be CSV file (Comma delimited)</br>
-							• File only contains data, no header</br>
-							• File must be like Example Excel file, Download this
-						</p>
-						<a href="dealer_info2.csv" style="font-size: 14px; text-align: center;">Download Example Excel File</a>
-						<p style="color: red;">
-							• Click On browse button</br>
-							• Select the csv file and Click on Upload button</br>
-							• The bellow table will show the CSV file’s data</br>
-							• If the data already exist the status will be Incorrect with red mark</br>
-							• If you think Data is not ok, you can cancel the import by clicking on Import Button</br>
-							• If you Find Everything ok, click on Submit button</br>
-							• After On Click Submit button the Data will finally store in Orginal Database
-							</br>
-						</p>
+						
 						</br></br></br>
 						<div class="box">
 							<form action="import.php" method="post" enctype="multipart/form-data" name="form1" id="form1" >
@@ -156,7 +140,7 @@
 			return false;
 		}
 		$('#toggle').click(function () {
-		screenfull.toggle($('#container')[0]);
+			screenfull.toggle($('#container')[0]);
 		});
 	});
 	$(document).ready(function() {
