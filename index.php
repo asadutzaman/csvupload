@@ -130,20 +130,20 @@
     $(document).ready(function() {
 		$('#table').basictable();
 		$('#table-breakpoint').basictable({
-		breakpoint: 768
+			breakpoint: 768
 		});
 		$('#table-swap-axis').basictable({
-		swapAxis: true
+			swapAxis: true
 		});
 		$('#table-force-off').basictable({
-		forceResponsive: false
+			forceResponsive: false
 		});
 		$('#table-no-resize').basictable({
-		noResize: true
+			noResize: true
 		});
 		$('#table-two-axis').basictable();
 		$('#table-max-height').basictable({
-		tableWrapper: true
+			tableWrapper: true
 		});
     });
 </script>
