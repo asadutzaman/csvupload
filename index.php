@@ -62,8 +62,8 @@
 							<form action="import.php" method="post" enctype="multipart/form-data" name="form1" id="form1" >
 								<input  type="file" class="form-control" id="usr" name="csv">
 								<label for="file-7"><span></span> <strong></label>
-								<br>
-								<label for="file-7"><span></span> <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> Upload &hellip;</button></label>
+								</div>
+								<label for="file-7"><span></span> <button class="btn btn-primary btn-sm" type="type" name="importer"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> Upload &hellip;</button></label>
 							</form>
 						</div>
 						<div class="w3l-table-info agile_info_shadow">
@@ -100,14 +100,15 @@
 								</tfoot>
 							</table>
 							<div class="box" style="float: right; margin-top:20px;">
-								<form action="import.php" method="post" enctype="multipart/form-data" name="form1" id="form1" >
-									<input type="submit" name="agree" value="submit">
+								<form action="import.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+									<button type="submit" name="agree" value="submit" class="btn btn-success btn-sm">Submit</button>
 								</form>
 							</div>
 							<div class="box" style="float: right; margin-top:20px;">
-								<form action="import.php" method="post" enctype="multipart/form-data" name="form1" id="form1" >
-									<input type="submit" name="Cancel" value="Cancel">
+								<form action="import.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+									<button type="submit" name="Cancel" value="Cancel" class="btn btn-danger btn-sm">Cancel</button>
 								</form>
+							&nbsp;&nbsp; &nbsp;
 							</div>
 						</div>
 					</div>
@@ -128,25 +129,19 @@
 <script type="text/javascript">
     $(document).ready(function() {
 		$('#table').basictable();
-
 		$('#table-breakpoint').basictable({
 		breakpoint: 768
 		});
-
 		$('#table-swap-axis').basictable({
 		swapAxis: true
 		});
-
 		$('#table-force-off').basictable({
 		forceResponsive: false
 		});
-
 		$('#table-no-resize').basictable({
 		noResize: true
 		});
-
 		$('#table-two-axis').basictable();
-
 		$('#table-max-height').basictable({
 		tableWrapper: true
 		});
